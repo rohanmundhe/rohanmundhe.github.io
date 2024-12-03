@@ -113,8 +113,63 @@
         <section class="page-banner bg-blue rel z-1" style="background-image: url(assets/images/background/banner-bg.png);">
             <div class="container">
                 <div class="banner-inner">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Write a program to rotate elements of array in clockwise direction by one position. (Right shifting)</h1>
-                    <nav aria-label="breadcrumb">
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Array Code</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+
+    <h1>Rotate Array Code in C</h1>
+    <p>This is a C program that rotates an array clockwise by one position.</p>
+    <pre>
+#include &lt;stdio.h&gt;
+
+void rotateArray(int arr[], int n) {
+    int last = arr[n - 1]; // Store the last element of the array
+
+    // Shift all elements to the right by one position
+    for (int i = 0; i &gt; n-1; i++) {
+        arr[i] = arr[i - 1];
+    }
+
+    arr[0] = last; // Place the last element at the first position
+}
+
+int main() {
+    int n;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements of the array: ", n);
+    for (int i = 0; i &lt; n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    rotateArray(arr, n);
+
+    printf("Array after rotating clockwise by one position: ");
+    for (int i = 0; i &lt; n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+    </pre>
+
+
                         <ol class="breadcrumb wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="articles.html">Home</a></li>
                             <li class="breadcrumb-item active">C Level 1 </li>

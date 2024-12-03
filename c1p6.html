@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!--====== Title ======-->
-    <title>Spirituality</title>
+    <title>C Level 1</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/logos/rohan.jpg" type="image/x-icon">
     <!--====== Google Fonts ======-->
@@ -52,7 +52,7 @@
             <!--Header-Top-->
             <div class="header-top text-center text-white bg-blue py-5">
                 <div class="container rel z-1">
-                    <p>Welcome to Your Personal Development Journey!</p>
+                    <p>Welcome to code problems</p>
                     <img class="header-left-shape" src="assets/images/shapes/header-top-left.png" alt="shape">
                     <img class="header-right-shape slideLeftRight infinite" src="assets/images/shapes/header-top-right.png" alt="shape">
                 </div>
@@ -63,14 +63,14 @@
                 <div class="container clearfix">
                     <div class="header-inner py-20 border-bottom-0">
                         <div class="logo-outer">
-                            <div class="logo"><a href="articles.html"><img src="assets/images/logos/digitallogo.png" alt="Logo"></a></div>
+                            <div class="logo"><a href="code.html"><img src="assets/images/logos/digitallogo.png" alt="Logo"></a></div>
                         </div>
 
                         <div class="nav-outer clearfix">
                             <!-- Main Menu -->
                             <nav class="main-menu navbar-expand-lg">
                                 <div class="navbar-header">
-                                    <div class="logo-mobile"><a href="articles.html"><img src="assets/images/logos/digitallogo.png" alt="Logo"></a></div>
+                                    <div class="logo-mobile"><a href="code.html"><img src="assets/images/logos/digitallogo.png" alt="Logo"></a></div>
                                     <!-- Toggle Button -->
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="main-menu">
                                         <span class="icon-bar"></span>
@@ -81,7 +81,7 @@
 
                                 <div class="navbar-collapse collapse clearfix" id="main-menu">
                                     <ul class="navigation clearfix">
-                                        <li><a href="articles.html">Home</a></li>
+                                        <li><a href="code.html">Home</a></li>
                                      
                                         <li><a href="contact.html">Contact</a></li>
                                         
@@ -97,7 +97,7 @@
                            
                             
                            
-                            <a href="contact.html" class="theme-btn style-two">Get Started <i class="fas fa-arrow-right"></i></a>
+                            <a href="code.html/#start" class="theme-btn style-two">Get Started <i class="fas fa-arrow-right"></i></a>
                         </div>
 
                     </div>
@@ -113,19 +113,19 @@
         <section class="page-banner bg-blue rel z-1" style="background-image: url(assets/images/background/banner-bg.png);">
             <div class="container">
                 <div class="banner-inner">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Spirituality</h1>
+                    <h1 class="page-title wow fadeInUp delay-0-2s">Write a recursive function to calculate kth term of Fibonacci Series. Use it to display first n terms of Fibonacci Series </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb wow fadeInUp delay-0-4s">
-                            <li class="breadcrumb-item"><a href="articles.html">Home</a></li>
-                            <li class="breadcrumb-item active">Spirituality</li>
+                            <li class="breadcrumb-item"><a href="code.html">Home</a></li>
+                            <li class="breadcrumb-item active">C level 1</li>
                         </ol>
                     </nav>
                 </div>
             </div>
             <img class="dots-shape" src="assets/images/shapes/white-dots-two.png" alt="Shape">
             <img class="tringle-shape slideLeftRight" src="assets/images/shapes/white-tringle.png" alt="Shape">
-            <img class="close-shape" src="assets/images/shapes/white-close.png" alt="Shape">
-            <img src="assets/images/newsletter/circle.png" alt="shape" class="banner-circle slideUpRight">
+            
+
             <img class="dots-shape-three slideUpDown delay-1-5s" src="assets/images/shapes/white-dots-three.png" alt="Shape">
         </section>
         <!--====== Page Banner End ======-->
@@ -134,10 +134,8 @@
        <!--====== Blog Standard Start ======-->
         <section class="blog-standard-area pt-130 pb-160 rpt-100 rpb-90">
             <div class="container">
-                <p>&nbsp;#include &lt;stdio.h&gt;</p><p>void rotateArray(int arr[], int n) {</p><p>&nbsp; &nbsp; int last = arr[n - 1]; // Store the last element of the array</p><p>&nbsp; &nbsp; // Shift all elements to the right by one position</p><p>&nbsp; &nbsp; for (int i = 0; i &gt; n-1; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; arr[i] = arr[i - 1];</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; arr[0] = last; // Place the last element at the first position</p><p>}</p><p><br /></p><p>int main() {</p><p>&nbsp; &nbsp; int n;</p><p><br /></p><p>&nbsp; &nbsp; printf("Enter the size of the array: ");</p><p>&nbsp; &nbsp; scanf("%d", &amp;n);</p><p><br /></p><p>&nbsp; &nbsp; int arr[n];</p><p>&nbsp; &nbsp; printf("Enter %d elements of the array: ", n);</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; scanf("%d", &amp;arr[i]);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; rotateArray(arr, n);</p><p>&nbsp; &nbsp; printf("Array after rotating clockwise by one position: ");</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; printf("%d ", arr[i]);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; return 0;</p><p>}</p><p><br /></p>
-                            
-                        </div>
-                    </div>
+            <p>#include &lt;stdio.h&gt;</p><p><br /></p><p>// Recursive function to find the kth term of Fibonacci series</p><p>int fibonacci(int k) {</p><p>&nbsp; &nbsp; if (k &lt;= 1) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return k;&nbsp; // Base case: fib(0) = 0 and fib(1) = 1</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; return fibonacci(k - 1) + fibonacci(k - 2);&nbsp; // Recursive case</p><p>}</p><p><br /></p><p>int main() {</p><p>&nbsp; &nbsp; int n;</p><p><br /></p><p>&nbsp; &nbsp; // Input number of terms to display</p><p>&nbsp; &nbsp; printf("Enter the number of terms: ");</p><p>&nbsp; &nbsp; scanf("%d", &amp;n);</p><p><br /></p><p>&nbsp; &nbsp; // Display first n terms of the Fibonacci series</p><p>&nbsp; &nbsp; printf("Fibonacci series up to %d terms: \n", n);</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; printf("%d ", fibonacci(i));&nbsp; // Call the recursive function for each term</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; printf("\n");</p><p>&nbsp; &nbsp; return 0;</p><p>}</p><div><br /></div>
+            </div>
                     
                         </div>
                     </div>

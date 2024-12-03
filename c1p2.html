@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!--====== Title ======-->
-    <title>Spirituality</title>
+    <title>C1P1</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/logos/rohan.jpg" type="image/x-icon">
     <!--====== Google Fonts ======-->
@@ -113,11 +113,11 @@
         <section class="page-banner bg-blue rel z-1" style="background-image: url(assets/images/background/banner-bg.png);">
             <div class="container">
                 <div class="banner-inner">
-                    <h1 class="page-title wow fadeInUp delay-0-2s">Spirituality</h1>
+                    <h1 class="page-title wow fadeInUp delay-0-2s">Write a C program to search given integer in the array and find its frequency</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="articles.html">Home</a></li>
-                            <li class="breadcrumb-item active">Spirituality</li>
+                            <li class="breadcrumb-item active">C level 1</li>
                         </ol>
                     </nav>
                 </div>
@@ -134,8 +134,7 @@
        <!--====== Blog Standard Start ======-->
         <section class="blog-standard-area pt-130 pb-160 rpt-100 rpb-90">
             <div class="container">
-                <p>&nbsp;#include &lt;stdio.h&gt;</p><p>void rotateArray(int arr[], int n) {</p><p>&nbsp; &nbsp; int last = arr[n - 1]; // Store the last element of the array</p><p>&nbsp; &nbsp; // Shift all elements to the right by one position</p><p>&nbsp; &nbsp; for (int i = 0; i &gt; n-1; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; arr[i] = arr[i - 1];</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; arr[0] = last; // Place the last element at the first position</p><p>}</p><p><br /></p><p>int main() {</p><p>&nbsp; &nbsp; int n;</p><p><br /></p><p>&nbsp; &nbsp; printf("Enter the size of the array: ");</p><p>&nbsp; &nbsp; scanf("%d", &amp;n);</p><p><br /></p><p>&nbsp; &nbsp; int arr[n];</p><p>&nbsp; &nbsp; printf("Enter %d elements of the array: ", n);</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; scanf("%d", &amp;arr[i]);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; rotateArray(arr, n);</p><p>&nbsp; &nbsp; printf("Array after rotating clockwise by one position: ");</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; printf("%d ", arr[i]);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; return 0;</p><p>}</p><p><br /></p>
-                            
+              <p>#include &lt;stdio.h&gt;</p><p><br /></p><p>int main() {</p><p>&nbsp; &nbsp; int n, search, count = 0;</p><p><br /></p><p>&nbsp; &nbsp; // Input the size of the array</p><p>&nbsp; &nbsp; printf("Enter the size of the array: ");</p><p>&nbsp; &nbsp; scanf("%d", &amp;n);</p><p><br /></p><p>&nbsp; &nbsp; int arr[n];</p><p><br /></p><p>&nbsp; &nbsp; // Input elements of the array</p><p>&nbsp; &nbsp; printf("Enter %d elements of the array: ", n);</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; scanf("%d", &amp;arr[i]);</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; // Input the number to search</p><p>&nbsp; &nbsp; printf("Enter the number to search: ");</p><p>&nbsp; &nbsp; scanf("%d", &amp;search);</p><p><br /></p><p>&nbsp; &nbsp; // Count the frequency of the searched number</p><p>&nbsp; &nbsp; for (int i = 0; i &lt; n; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; if (arr[i] == search) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count++;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; // Display the result</p><p>&nbsp; &nbsp; if (count &gt; 0) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; printf("The number %d occurs %d times in the array.\n", search, count);</p><p>&nbsp; &nbsp; } else {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; printf("The number %d is not found in the array.\n", search);</p><p>&nbsp; &nbsp; }</p><p><br /></p><p>&nbsp; &nbsp; return 0;</p><p>}</p><div><br /></div> 
                         </div>
                     </div>
                     
